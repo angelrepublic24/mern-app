@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+mongoose.set('strictQuery', false);
 const connection = async() => {
     try {
         await mongoose.connect("mongodb://82.197.95.210:27017/portfolio")
