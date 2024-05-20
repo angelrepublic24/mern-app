@@ -5,12 +5,13 @@ const path = require('path');
 
 const createProject = async(req, res) => {
     let body = req.body;
+    let langArray = req.body.lang.split(',');
 
     let project =  new Project({
         name: body.name,
         description: body.description,
         category: body.category,
-        lang: body.lang,
+        lang: langArray,
         date: body.date,
         image: body.image,
         user: req.user._id
