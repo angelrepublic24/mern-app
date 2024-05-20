@@ -10,8 +10,8 @@ const createProject = async(req, res) => {
     let project =  new Project({
         name: body.name,
         description: body.description,
-        category: body.category,
         lang: langArray,
+        url: body.url,
         date: body.date,
         image: body.image,
         user: req.user._id

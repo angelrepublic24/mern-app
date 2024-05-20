@@ -17,9 +17,7 @@ const ProjectSchema = Schema({
     url: {
         type: String,
     },
-    date: {
-        type: Number,
-    },
+    
     image: {
         type: String,
     },
@@ -27,7 +25,11 @@ const ProjectSchema = Schema({
         type: Schema.ObjectId,
         ref: "User",
         required: true,
+    },
+    date: {
+        type: Number
     }
+
 },{
     timestamps: true,
 })
