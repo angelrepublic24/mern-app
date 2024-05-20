@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 const connection = async() => {
     try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/portfolio")
+        await mongoose.connect("mongodb+srv://angelrepublic24:almonte2410@cluster0.amzmpik.mongodb.net/portfolio?retryWrites=true&w=majority&appName=Cluster0")
         console.log("database connection established")
     } catch (e) {
         console.log(e);
