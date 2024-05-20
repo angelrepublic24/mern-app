@@ -11,19 +11,14 @@ const ProjectSchema = Schema({
         type: String,
         required: true, 
     },
-    category: {
-        type: String,
-    },
     lang: {
-        type: String,
-        required: true,
+        type: [String],
     },
     url: {
         type: String,
     },
     date: {
-        type: Date,
-        required: true,
+        type: Number,
     },
     image: {
         type: String,
