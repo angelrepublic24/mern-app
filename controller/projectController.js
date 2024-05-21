@@ -32,7 +32,8 @@ const createProject = async(req, res) => {
 
 const getProjects = (req, res) => {
     Project.find()
-            .populate('user', "-__v")        
+            .populate('user', "-__v")  
+            .sort("-date")
             .then((projectDB) => {
                 if(!projectDB) return res.status(400).send({
                     status: 'error',
