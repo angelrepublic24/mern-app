@@ -10,7 +10,7 @@ connection()
 const app = express();
 const port = 3200;
 const options = {
-    origin: ["http://82.197.95.210/", ""https://82.197.95.210/""]
+    origin: ["http://82.197.95.210/", "https://82.197.95.210/"]
 }
 
 app.use(cors(options));
